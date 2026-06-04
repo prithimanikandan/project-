@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <style>
+        body{
+            font-family: Arial;
+            margin:20px;
+        }
+
+        h1{
+            text-align:center;
+        }
+
+        table{
+            width:80%;
+            margin:auto;
+            border-collapse:collapse;
+        }
+
+        th,td{
+            border:1px solid black;
+            padding:10px;
+            text-align:center;
+        }
+
+        th{
+            background:green;
+            color:white;
+        }
+
+        button{
+            padding:10px 20px;
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student Management System</h1>
+
+<center>
+<button onclick="logout()">Logout</button>
+</center>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Year</th>
+        <th>Marks</th>
+    </tr>
+
+    <tr>
+        <td>101</td>
+        <td>Charukesh</td>
+        <td>CSE</td>
+        <td>Final Year</td>
+        <td>89</td>
+    </tr>
+
+    <tr>
+        <td>102</td>
+        <td>Priya</td>
+        <td>IT</td>
+        <td>Third Year</td>
+        <td>92</td>
+    </tr>
+
+    <tr>
+        <td>103</td>
+        <td>Rahul</td>
+        <td>ECE</td>
+        <td>Second Year</td>
+        <td>85</td>
+    </tr>
+</table>
+
+<script>
+function logout(){
+    window.location.href="login.html";
+}
+</script>
+
+</body>
+</html>
